@@ -11,10 +11,10 @@
     <a-scene>
       <a-assets>
         <a-asset-item id="395johnson" src="assets/395johnson.obj"></a-asset-item>
-        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+        <img id="texture" src="assets/texture_test.jpg">
       </a-assets>
 
-      <a-box color="red" position="0 2 -5" scale=".25 .25 .25"></a-box>
+      <a-entity geometry="primitive: box" material="src: #texture" position="0 2 -5" scale=".25 .25 .25"></a-entity>
 
       <a-obj-model src="#395johnson" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
 
