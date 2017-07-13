@@ -16,13 +16,14 @@
 
       <a-entity geometry="primitive: box" material="src: #texture" position="0 2 -5" scale=".25 .25 .25"></a-entity>
 
-      <a-obj-model src="#395johnson" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395johnson" material="src: #texture" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
 
       <a-entity camera="userHeight: 1.6" look-controls wasd-controls="fly: true" id="view">
         <a-cursor color="#ffcc00"></a-cursor>
       </a-entity>
 
-      <a-sky color="blue"></a-sky>
+      <a-sky color="#222"></a-sky>
+      <a-plane rotation="-90 0 0" width="1000" height="1000" color="grey"></a-plane>
     </a-scene>
 
   </body>
