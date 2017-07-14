@@ -5,6 +5,7 @@
     <title>5stages</title>
     <meta name="description" content="Patrick Meagher VRAR project built with A-Frame">
     <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <script src="js/materials.js"></script>
   </head>
 
   <body>
@@ -17,7 +18,7 @@
         <a-asset-item id="395j_columns" src="assets/395johnson_columns.obj"></a-asset-item>
 
         <!-- textures -->
-        <img id="texture" src="assets/texture_test.jpg">
+        <img id="white-brick" src="assets/white-brick.jpg">
 
         <!-- artwork -->
         <img id="lscapes-and-nosmos" src="art/Patrick Meagher - Lscapes and Nosmos - Duratrans in lightboxes - 40x120x10 - 1999.jpg">
@@ -33,16 +34,17 @@
         <img id="plastic-winter" src="art/Patrick Meagher - Plastic Ecologies (Winter Floe) - c-print on Dibond - 5.83x8.27 - free edition of 5000 - 2001.jpg">
       </a-assets>
 
-
       <!-- test objects -->
       <a-entity geometry="primitive: box" position="10 2 -5" scale=".25 .25 .25"></a-entity>
 
-      <!-- stages -->
-      <a-obj-model src="#395j_walls" material="src: #texture" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <!-- gallery -->
+      <a-obj-model src="#395j_walls"
+          material="src: #white-brick; color: #fff; roughness: 1; metalness: 0; repeat:25" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_doors" color="blue" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
-      <a-obj-model src="#395j_windows" color="orange" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
-      <a-obj-model src="#395j_columns" color="red" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
-
+      <a-obj-model src="#395j_windows"
+          material="color: orange; transparent: true; opacity: 0.25"
+          position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_columns" material="color: red" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
 
       <!-- artwork -->
       <a-image src="#lscapes-and-nosmos" height="1.016" width="3.048" position="0 2 -10"></a-image>
