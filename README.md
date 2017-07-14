@@ -1,2 +1,2 @@
 # stages
-Patrick Meagher VR project built with A-Frame
+Patrick Meagher VRAR project built with A-Frame
