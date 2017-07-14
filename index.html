@@ -19,18 +19,22 @@
         <!-- artwork -->
         <img id="lscapes-and-nosmos" src="art/Patrick Meagher - Lscapes and Nosmos - Duratrans in lightboxes - 40x120x10 - 1999.jpg">
         <img id="corbusian-trauma" src="art/Patrick Meagher - Corbusian Trauma - Digital print in EPS frame - 16x23x3 - 2000.png">
+        <img id="orchestra" src="art/Patrick Meagher - Orchestra - C-print - 8x12 - 2000.jpg">
+        <img id="eastern-garden" src="art/Patrick Meagher - Eastern Garden (installation view 1) - LMCC World Views Residency, World Trade Center - EPS, PVA, acrylic - 8x16x4 feet - 2001.jpg">
       </a-assets>
 
 
       <!-- test objects -->
-      <a-entity geometry="primitive: box" material="src: #texture" position="0 2 -5" scale=".25 .25 .25"></a-entity>
+      <a-entity geometry="primitive: box" position="10 2 -5" scale=".25 .25 .25"></a-entity>
 
       <!-- stages -->
       <a-obj-model src="#395johnson" material="src: #texture" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
 
       <!-- artwork -->
       <a-image src="#lscapes-and-nosmos" height="1.016" width="3.048" position="0 2 -10"></a-image>
-      <a-image src="#corbusian-trauma" height="0.4064" width="0.5842" position="0 1 -10"></a-image>
+      <a-image src="#corbusian-trauma" height="0.4064" width="0.5842" position="-10 2 -10" rotation="0 90 0"></a-image>
+      <a-image src="#orchestra" height="0.2032" width="0.3048" position="-15 2 -10" rotation="0 90 0"></a-image>
+      <a-image src="#eastern-garden" height="1.2192" width="4.8768" position="-20 4 -15" rotation="0 90 0"></a-image>
 
       <!-- user position -->
       <a-entity camera="userHeight: 1.6" look-controls wasd-controls="fly: true" id="view">
