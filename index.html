@@ -11,7 +11,10 @@
     <a-scene>
       <a-assets>
         <!-- obj models -->
-        <a-asset-item id="395johnson" src="assets/395johnson.obj"></a-asset-item>
+        <a-asset-item id="395j_walls" src="assets/395johnson_walls.obj"></a-asset-item>
+        <a-asset-item id="395j_doors" src="assets/395johnson_doors.obj"></a-asset-item>
+        <a-asset-item id="395j_windows" src="assets/395johnson_windows.obj"></a-asset-item>
+        <a-asset-item id="395j_columns" src="assets/395johnson_columns.obj"></a-asset-item>
 
         <!-- textures -->
         <img id="texture" src="assets/texture_test.jpg">
@@ -35,7 +38,11 @@
       <a-entity geometry="primitive: box" position="10 2 -5" scale=".25 .25 .25"></a-entity>
 
       <!-- stages -->
-      <a-obj-model src="#395johnson" material="src: #texture" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_walls" material="src: #texture" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_doors" color="blue" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_windows" color="orange" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_columns" color="red" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+
 
       <!-- artwork -->
       <a-image src="#lscapes-and-nosmos" height="1.016" width="3.048" position="0 2 -10"></a-image>
