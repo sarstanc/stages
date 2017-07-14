@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>5stages</title>
-    <meta name="description" content="Patrick Meagher VR project built with A-Frame">
+    <meta name="description" content="Patrick Meagher VRAR project built with A-Frame">
     <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
   </head>
 
@@ -20,16 +20,22 @@
         <img id="lscapes-and-nosmos" src="art/Patrick Meagher - Lscapes and Nosmos - Duratrans in lightboxes - 40x120x10 - 1999.jpg">
       </a-assets>
 
+
+      <!-- test objects -->
       <a-entity geometry="primitive: box" material="src: #texture" position="0 2 -5" scale=".25 .25 .25"></a-entity>
 
+      <!-- stages -->
       <a-obj-model src="#395johnson" material="src: #texture" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
 
+      <!-- artwork -->
       <a-image src="#lscapes-and-nosmos" width="3.048" height="1.016" position="0 2 -10"></a-image>
 
+      <!-- user position -->
       <a-entity camera="userHeight: 1.6" look-controls wasd-controls="fly: true" id="view">
         <a-cursor color="#ffcc00"></a-cursor>
       </a-entity>
 
+      <!-- environment -->
       <a-sky color="#222"></a-sky>
       <a-plane rotation="-90 0 0" width="1000" height="1000" color="grey"></a-plane>
     </a-scene>
