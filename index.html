@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>5stages</title>
+    <title>stages</title>
     <meta name="description" content="Patrick Meagher VRAR project built with A-Frame">
     <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
     <script src="js/materials.js"></script>
+    <script src="js/test.js"></script>
   </head>
 
   <body>
@@ -35,7 +36,8 @@
       </a-assets>
 
       <!-- test objects -->
-      <a-entity geometry="primitive: box" position="10 2 -5" scale=".25 .25 .25"></a-entity>
+      <a-entity geometry="primitive: box" position="10 2 -5" scale=".25 .25 .25" material="line-dashed"></a-entity>
+      <a-box log="passed test" position="8 2 -5" scale=".25 .25 .25" color="blue"></a-box>
 
       <!-- gallery -->
       <a-obj-model src="#395j_walls"
