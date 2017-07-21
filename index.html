@@ -29,6 +29,7 @@
 
         <!-- textures -->
         <img id="white-brick" src="textures/white-brick.jpg">
+        <img id="brick-disp" src="textures/brick_displacement.jpg">
 
         <!-- artwork -->
         <img id="lscapes-and-nosmos" src="art/Patrick Meagher - Lscapes and Nosmos - Duratrans in lightboxes - 40x120x10 - 1999.jpg">
@@ -50,8 +51,8 @@
 
       <!-- gallery -->
       <a-obj-model src="#395j_bluewall" color="blue" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
-      <a-obj-model src="#395j_ceiling" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
-      <a-obj-model src="#395j_cmu" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_ceiling" color="#424242" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_cmu" color="#afafaf" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_columns" material="color: red" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_cormetal" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_corroof" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
@@ -59,9 +60,9 @@
       <a-obj-model src="#395j_flatroof" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_greenwall" color="green" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_pipes" color="red" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
-      <a-obj-model src="#395j_rolldown" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_rolldoor" color="#666" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_whitebrick"
-          material="src: #white-brick; color: #fff; roughness: 1; metalness: 0; repeat:25" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+          material="src: #white-brick; roughness: 1; metalness: 0" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_windows"
           material="color: orange; transparent: true; opacity: 0.25"
           position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
@@ -80,7 +81,7 @@
       <a-image src="#plastic-winter" height="0.148082" width="0.210058" position="15 3 -15" rotation="0 90 0"></a-image>
 
       <!-- user position -->
-      <a-entity camera="userHeight: 1.6" look-controls wasd-controls="fly: true" id="view">
+      <a-entity camera="userHeight: 1.6" look-controls wasd-controls="fly: false" id="view">
         <a-cursor color="#ffcc00"></a-cursor>
       </a-entity>
 
