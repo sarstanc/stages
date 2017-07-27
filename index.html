@@ -31,6 +31,8 @@
         <!-- textures -->
         <img id="white-brick" src="textures/white-brick.jpg">
         <img id="brick-disp" src="textures/brick_displacement.jpg">
+        <img id="concrete" src="textures/concrete_floor.jpg">
+        <img id="cmu" src="textures/painted-cinder-block.jpg">
 
         <!-- artwork -->
         <img id="lscapes-and-nosmos" src="art/Patrick Meagher - Lscapes and Nosmos - Duratrans in lightboxes - 40x120x10 - 1999.jpg">
@@ -55,7 +57,9 @@
       <!-- gallery -->
       <a-obj-model src="#395j_bluewall" color="blue" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_ceiling" color="#424242" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
-      <a-obj-model src="#395j_cmu" color="#afafaf" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
+      <a-obj-model src="#395j_cmu"
+          material="src:#cmu; color:#afafaf; roughness: 1; metalness: 0; repeat: 4 4" 
+          position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_columns" material="color: red" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_cormetal" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
       <a-obj-model src="#395j_corroof" position="-100 0 50" rotation="-90 0 0" scale="1 1 1"></a-obj-model>
@@ -102,7 +106,8 @@
 
       <!-- environment -->
       <!--<a-sky color="#222"></a-sky>-->
-      <a-plane rotation="-90 0 0" width="1000" height="1000" color="grey"></a-plane>
+      <a-plane rotation="-90 0 0" width="1000" height="1000"
+        material="src: #concrete; roughness: 1; metalness: 0; repeat: 80 80"></a-plane>
     </a-scene>
 
   </body>
